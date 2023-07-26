@@ -15,17 +15,17 @@ audits:
  - function: columns_should_be_unique
    blocking: true
    columns:
-     - id
+       - id
  # Timeliness check
- - function: columns_should_be_unique
+ - function: columns_should_be_within_time
    blocking: true
    columns:
-     - id
+       - date
  # Relevance check
  - function: columns_should_be_unique
    blocking: true
    columns:
-     - id
+       - id
  # Accuracy & Validity check
  - function: columns_should_be_unique
    blocking: true
