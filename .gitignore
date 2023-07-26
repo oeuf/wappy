@@ -7,6 +7,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*spark-warehouse*
 
 # C extensions
 *.so
@@ -29,6 +30,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+poetry.lock
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

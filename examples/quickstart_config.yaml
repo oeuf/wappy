@@ -1,0 +1,33 @@
+audits:
+  # Completeness check
+ - function: columns_should_not_have_nulls
+   blocking: true
+   params:
+       columns:
+         - id
+ # Consistency check
+ - function: columns_should_have_format
+   blocking: true
+   params:
+     columns:
+       - [event_date, YYYY-MM-DD]
+ # Uniqueness check
+ - function: columns_should_be_unique
+   blocking: true
+   columns:
+     - id
+ # Timeliness check
+ - function: columns_should_be_unique
+   blocking: true
+   columns:
+     - id
+ # Relevance check
+ - function: columns_should_be_unique
+   blocking: true
+   columns:
+     - id
+ # Accuracy & Validity check
+ - function: columns_should_be_unique
+   blocking: true
+   columns:
+     - id

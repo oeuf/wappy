@@ -17,9 +17,15 @@ Basic implementation of Write-Audit-Publish using PySpark.
 * Free software: Apache-2.0
 
 
-## Features
+## TODO
 
-* TODO
+* Add setup documentation
+* Add wap module with tests
+* Add github action(s) to run tests + linting.
+* (Write)
+* (Audit) Initial data quality checks: completeness, consistency, uniqueness, timeliness, relevance,
+  accuracy, validity. [Ref](https://ssmertin.com/articles/strategies-for-data-quality-with-apache-spark/), [Ref](https://netflixtechblog.com/data-pipeline-asset-management-with-dataflow-86525b3e21ca), and [Ref](https://netflixtechblog.com/ready-to-go-sample-data-pipelines-with-dataflow-17440a9e141d)
+* (Publish): Add high watermark timestamps.
 
 ## Credits
 
