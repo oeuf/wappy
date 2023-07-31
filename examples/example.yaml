@@ -1,0 +1,18 @@
+audits:
+  columns:
+    - name: id
+      tests:
+        - not_null:
+            blocking: true
+        - unique:
+            blocking: true
+        - accepted_values:
+            values: [0, 10000]
+        - not_accepted_values:
+            values: [-1]
+        - accepted_range:
+            values: [0, 10000]
+        - timeliness:
+        - accuracy:
+        - consistency:
+        - usability:
