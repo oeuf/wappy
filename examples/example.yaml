@@ -4,15 +4,22 @@ audits:
       tests:
         - not_null:
             blocking: true
+            report: true
         - unique:
             blocking: true
+            report: true
         - accepted_values:
-            values: [0, 10000]
+            values: [ 0, 10000 ]
         - not_accepted_values:
-            values: [-1]
+            values: [ -1 ]
         - accepted_range:
-            values: [0, 10000]
+            values: [ 0, 10000 ]
         - timeliness:
         - accuracy:
         - consistency:
         - usability:
+  table:
+    tests:
+      - not_null:
+          blocking: true
+          report: true
